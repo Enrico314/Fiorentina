@@ -1,0 +1,10 @@
+C:\scambio\Friorentina\Fiorentina\Fiorentina\bin\Release\Fiorentina.exe.config
+C:\scambio\Friorentina\Fiorentina\Fiorentina\bin\Release\Fiorentina.exe
+C:\scambio\Friorentina\Fiorentina\Fiorentina\bin\Release\Fiorentina.pdb
+C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Release\Fiorentina.Form1.resources
+C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Release\Fiorentina.Properties.Resources.resources
+C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Release\Fiorentina.csproj.GenerateResource.cache
+C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Release\Fiorentina.csproj.CoreCompileInputs.cache
+C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Release\Fiorentina.exe
+C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Release\Fiorentina.pdb
+C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Release\Fiorentina.csprojAssemblyReference.cache
