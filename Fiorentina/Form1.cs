@@ -59,8 +59,8 @@ namespace Fiorentina
         }
         // detlay between starts of the piastre
         //const int deltay = (45*2); OLD 2022
-        //const int deltay = (50); // new 2023
-        const int deltay = (5); // debug 
+        const int deltay = (50); // new 2023
+        //const int deltay = (5); // debug 
 
         public void run_g1() // starts at delay*0
         {
@@ -103,7 +103,17 @@ namespace Fiorentina
             // FIXME, terminate the threads
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String to_speak = "Moglia Gay e Gay chi non lo dice";
+            _ss.Speak(to_speak);
+        }
     }
+
+
+
+
     public class Griglia
     {
         int number; // identifier of the class
@@ -137,7 +147,113 @@ namespace Fiorentina
         SpeechSynthesizer _ss;
         System.Timers.Timer aTimer = new System.Timers.Timer();
 
-    
+        public class Costata
+        {
+            int t1 = (3 * 60 + 40);
+            int t2 = (3 * 60 + 40);
+            int t3 = (3 * 60);
+            //int t1 = 15;
+            //int t2 = 15;
+            //int t3 = 10;
+            public Costata(int index_costata, int index_piastra, int delay, SpeechSynthesizer _ss, TextBox textbox_t1, TextBox textbox_t2, TextBox textbox_t3)
+            {
+                bool first_cycle = true;
+                do
+                {
+                    bool exception = false;
+                    try
+                    {
+                        // something
+                        t1 = Int32.Parse(textbox_t1.Text);
+                        t2 = Int32.Parse(textbox_t2.Text);
+                        t3 = Int32.Parse(textbox_t3.Text);
+                    }
+                    catch (Exception e)
+                    {
+                        exception = true;
+                    }
+                    finally
+                    {
+                        if (!exception)
+                        {
+
+                        }
+                    }
+
+                    String to_speak = "";
+                    // if first, time, wait for the delay
+                    if (first_cycle)
+                    {
+                        System.Threading.Thread.Sleep(delay * 1000);
+                        to_speak = "Piastra " + index_piastra.ToString() + " carica costata " + index_costata.ToString();
+                        _ss.Speak(to_speak);
+                        System.Threading.Thread.Sleep(t1 * 1000);
+                        first_cycle = false;
+                    }
+
+                    exception = false;
+                    try
+                    {
+                        // something
+                        t1 = Int32.Parse(textbox_t1.Text);
+                        t2 = Int32.Parse(textbox_t2.Text);
+                        t3 = Int32.Parse(textbox_t3.Text);
+                    }
+                    catch (Exception e)
+                    {
+                        exception = true;
+                    }
+                    finally
+                    {
+                        if (!exception)
+                        {
+
+                        }
+                    }
+
+
+                    to_speak = "Piastra " + index_piastra.ToString() + " gira costata " + index_costata.ToString();
+                    _ss.Speak(to_speak);
+                    System.Threading.Thread.Sleep(t2 * 1000);
+                    to_speak = "Piastra " + index_piastra.ToString() + " in piedi costata " + index_costata.ToString() +" e carica nuova " +index_costata.ToString();
+                    _ss.Speak(to_speak);
+                    exception = false;
+                    try
+                    {
+                        // something
+                        t1 = Int32.Parse(textbox_t1.Text);
+                        t2 = Int32.Parse(textbox_t2.Text);
+                        t3 = Int32.Parse(textbox_t3.Text);
+                    }
+                    catch (Exception e)
+                    {
+                        exception = true;
+                    }
+                    finally
+                    {
+                        if (!exception)
+                        {
+
+                        }
+                    }
+                    System.Threading.Thread.Sleep(t1 * 1000);
+                } while (true);
+
+            }
+        }
+
+        public void runCostata(
+            int index_piastra,
+            int index_costata,
+            int delay,
+            SpeechSynthesizer _ss,
+            TextBox tbt1,
+            TextBox tbt2,
+            TextBox tbt3
+            )
+        {
+            Costata C = new Costata(index_costata, index_piastra, delay, _ss, tbt1, tbt2, tbt3);
+        }
 
         // griglia class
         public Griglia(int number, SpeechSynthesizer _ss, TextBox t1, TextBox t2, TextBox t3, int init_deltay, CheckBox c1, CheckBox c2, CheckBox c3, TextBox cicl)
@@ -164,9 +280,40 @@ namespace Fiorentina
             //System.Console.WriteLine("Class constructor");
             System.Threading.Thread.Sleep(init_deltay*1000);
 
+            // start 3 costate
+            time_l1 = Int32.Parse(this.t1.Text);
+            time_l2 = Int32.Parse(this.t2.Text);
+            time_l3 = Int32.Parse(this.t3.Text);
+            //int time_tot = time_l1 + time_l2 + time_l3;
 
-            run_cycle();
+
+            StartTheThreadCostata(number, 1, 0, _ss, t1, t2, t3);
+            StartTheThreadCostata(number, 2, 30 * 4, _ss, t1, t2, t3); //was 50
+            StartTheThreadCostata(number, 3, 30 * 8, _ss, t1, t2, t3);
+            
+            
+            //Costata c = new Costata(1, 1, 0, _ss);
+
+            //run_cycle();
         }
+
+
+        public Thread StartTheThreadCostata
+            (int index_piastra,
+            int index_costata,
+            int delay,
+            SpeechSynthesizer _ss,
+            TextBox tbt1,
+            TextBox tbt2,
+            TextBox tbt3
+
+            )
+        {
+            var t = new Thread(() => runCostata(index_piastra, index_costata, delay, _ss, tbt1, tbt2, tbt3));
+            t.Start();
+            return t;
+        }
+
 
 
 
@@ -174,12 +321,14 @@ namespace Fiorentina
         {
             int ciclo_index = 1;
             bool primo_ciclo = true;
+            bool secondo_ciclo = false;
             do
             {
-                
+
                 if (primo_ciclo)
                 {
                     primo_ciclo = false;
+                    secondo_ciclo = true;
 
                     String to_speak = "Piastra " + number.ToString() + " carica";
                     cicl.Text = ciclo_index.ToString();
@@ -190,8 +339,8 @@ namespace Fiorentina
                     time_l1 = Int32.Parse(this.t1.Text);
                     time_l2 = Int32.Parse(this.t2.Text);
                     time_l3 = Int32.Parse(this.t3.Text);
-                    System.Threading.Thread.Sleep(time_l1*1000);
-                    
+                    System.Threading.Thread.Sleep(time_l1 * 1000);
+
                     // fiorentina cariata, apsetto la cottura per time_l1
                     //System.Threading.Thread.Sleep(time_l1);
                     // giro la fiorentina
@@ -206,15 +355,20 @@ namespace Fiorentina
                     time_l1 = Int32.Parse(this.t1.Text);
                     time_l2 = Int32.Parse(this.t2.Text);
                     time_l3 = Int32.Parse(this.t3.Text);
-                    System.Threading.Thread.Sleep(time_l2*1000);
-                    
-                    
-                    
+                    System.Threading.Thread.Sleep(time_l2 * 1000);
+
+
+
 
 
                 }
-                else
+                else if (secondo_ciclo)
                 {
+                    secondo_ciclo = false;
+                }
+                else 
+                {
+                    // secondo ciclo
                     
                     String to_speak = "Piastra " + number.ToString() + " in piedi e carica";
 
