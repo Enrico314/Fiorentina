@@ -32,8 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -50,12 +48,6 @@
             this.textBoxP4_s3 = new System.Windows.Forms.TextBox();
             this.textBoxP4_s2 = new System.Windows.Forms.TextBox();
             this.textBoxP4_s1 = new System.Windows.Forms.TextBox();
-            this.textBoxP5_s3 = new System.Windows.Forms.TextBox();
-            this.textBoxP5_s2 = new System.Windows.Forms.TextBox();
-            this.textBoxP5_s1 = new System.Windows.Forms.TextBox();
-            this.textBoxP6_s3 = new System.Windows.Forms.TextBox();
-            this.textBoxP6_s2 = new System.Windows.Forms.TextBox();
-            this.textBoxP6_s1 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -68,21 +60,13 @@
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -122,24 +106,6 @@
             this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Piastra 4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 210);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Piastra 5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 250);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Piastra 6";
             // 
             // label7
             // 
@@ -275,53 +241,6 @@
             this.textBoxP4_s1.TabIndex = 37;
             this.textBoxP4_s1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxP1_s1_KeyPress);
             // 
-            // textBoxP5_s3
-            // 
-            this.textBoxP5_s3.Location = new System.Drawing.Point(875, 207);
-            this.textBoxP5_s3.Name = "textBoxP5_s3";
-            this.textBoxP5_s3.Size = new System.Drawing.Size(100, 20);
-            this.textBoxP5_s3.TabIndex = 42;
-            this.textBoxP5_s3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxP1_s1_KeyPress);
-            // 
-            // textBoxP5_s2
-            // 
-            this.textBoxP5_s2.Location = new System.Drawing.Point(731, 207);
-            this.textBoxP5_s2.Name = "textBoxP5_s2";
-            this.textBoxP5_s2.Size = new System.Drawing.Size(100, 20);
-            this.textBoxP5_s2.TabIndex = 41;
-            this.textBoxP5_s2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxP1_s1_KeyPress);
-            // 
-            // textBoxP5_s1
-            // 
-            this.textBoxP5_s1.Location = new System.Drawing.Point(588, 207);
-            this.textBoxP5_s1.Name = "textBoxP5_s1";
-            this.textBoxP5_s1.Size = new System.Drawing.Size(100, 20);
-            this.textBoxP5_s1.TabIndex = 40;
-            this.textBoxP5_s1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxP1_s1_KeyPress);
-            // 
-            // textBoxP6_s3
-            // 
-            this.textBoxP6_s3.Location = new System.Drawing.Point(875, 247);
-            this.textBoxP6_s3.Name = "textBoxP6_s3";
-            this.textBoxP6_s3.Size = new System.Drawing.Size(100, 20);
-            this.textBoxP6_s3.TabIndex = 45;
-            // 
-            // textBoxP6_s2
-            // 
-            this.textBoxP6_s2.Location = new System.Drawing.Point(731, 247);
-            this.textBoxP6_s2.Name = "textBoxP6_s2";
-            this.textBoxP6_s2.Size = new System.Drawing.Size(100, 20);
-            this.textBoxP6_s2.TabIndex = 44;
-            this.textBoxP6_s2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxP1_s1_KeyPress);
-            // 
-            // textBoxP6_s1
-            // 
-            this.textBoxP6_s1.Location = new System.Drawing.Point(588, 247);
-            this.textBoxP6_s1.Name = "textBoxP6_s1";
-            this.textBoxP6_s1.Size = new System.Drawing.Size(100, 20);
-            this.textBoxP6_s1.TabIndex = 43;
-            this.textBoxP6_s1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxP1_s1_KeyPress);
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoCheck = false;
@@ -454,72 +373,6 @@
             this.checkBox12.Text = "in piedi";
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoCheck = false;
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(155, 206);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(53, 17);
-            this.checkBox13.TabIndex = 60;
-            this.checkBox13.Text = "lato A";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoCheck = false;
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(267, 206);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(53, 17);
-            this.checkBox14.TabIndex = 59;
-            this.checkBox14.Text = "lato B";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoCheck = false;
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(388, 206);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(59, 17);
-            this.checkBox15.TabIndex = 58;
-            this.checkBox15.Text = "in piedi";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoCheck = false;
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(155, 246);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(53, 17);
-            this.checkBox16.TabIndex = 63;
-            this.checkBox16.Text = "lato A";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoCheck = false;
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(267, 246);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(53, 17);
-            this.checkBox17.TabIndex = 62;
-            this.checkBox17.Text = "lato B";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoCheck = false;
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(388, 246);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(59, 17);
-            this.checkBox18.TabIndex = 61;
-            this.checkBox18.Text = "in piedi";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -549,16 +402,6 @@
             this.label13.TabIndex = 66;
             this.label13.Text = "Tempo in piedi";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(1005, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 67;
-            this.textBox5.Text = "0";
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox1
             // 
@@ -600,16 +443,6 @@
             this.textBox4.Text = "0";
             this.textBox4.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(1005, 250);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 72;
-            this.textBox6.Text = "0";
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -636,21 +469,13 @@
             this.ClientSize = new System.Drawing.Size(1117, 450);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.checkBox16);
-            this.Controls.Add(this.checkBox17);
-            this.Controls.Add(this.checkBox18);
-            this.Controls.Add(this.checkBox13);
-            this.Controls.Add(this.checkBox14);
-            this.Controls.Add(this.checkBox15);
             this.Controls.Add(this.checkBox10);
             this.Controls.Add(this.checkBox11);
             this.Controls.Add(this.checkBox12);
@@ -663,12 +488,6 @@
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBoxP6_s3);
-            this.Controls.Add(this.textBoxP6_s2);
-            this.Controls.Add(this.textBoxP6_s1);
-            this.Controls.Add(this.textBoxP5_s3);
-            this.Controls.Add(this.textBoxP5_s2);
-            this.Controls.Add(this.textBoxP5_s1);
             this.Controls.Add(this.textBoxP4_s3);
             this.Controls.Add(this.textBoxP4_s2);
             this.Controls.Add(this.textBoxP4_s1);
@@ -685,14 +504,13 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
@@ -706,8 +524,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -724,12 +540,6 @@
         private System.Windows.Forms.TextBox textBoxP4_s3;
         private System.Windows.Forms.TextBox textBoxP4_s2;
         private System.Windows.Forms.TextBox textBoxP4_s1;
-        private System.Windows.Forms.TextBox textBoxP5_s3;
-        private System.Windows.Forms.TextBox textBoxP5_s2;
-        private System.Windows.Forms.TextBox textBoxP5_s1;
-        private System.Windows.Forms.TextBox textBoxP6_s3;
-        private System.Windows.Forms.TextBox textBoxP6_s2;
-        private System.Windows.Forms.TextBox textBoxP6_s1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
@@ -742,21 +552,13 @@
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox7;
     }

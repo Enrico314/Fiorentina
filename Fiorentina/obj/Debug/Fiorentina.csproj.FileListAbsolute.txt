@@ -8,3 +8,13 @@ C:\scambio\Friorentina\Fiorentina\Fiorentina\bin\Debug\Fiorentina.pdb
 C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Debug\Fiorentina.exe
 C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Debug\Fiorentina.pdb
 C:\scambio\Friorentina\Fiorentina\Fiorentina\obj\Debug\Fiorentina.Form1.resources
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\bin\Debug\Fiorentina.exe.config
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\bin\Debug\Fiorentina.exe
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\bin\Debug\Fiorentina.pdb
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\obj\Debug\Fiorentina.csproj.AssemblyReference.cache
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\obj\Debug\Fiorentina.Form1.resources
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\obj\Debug\Fiorentina.Properties.Resources.resources
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\obj\Debug\Fiorentina.csproj.GenerateResource.cache
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\obj\Debug\Fiorentina.csproj.CoreCompileInputs.cache
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\obj\Debug\Fiorentina.exe
+C:\Users\epier\Desktop\Fiorentina\Fiorentina\obj\Debug\Fiorentina.pdb

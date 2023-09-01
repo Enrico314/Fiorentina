@@ -47,10 +47,6 @@ namespace Fiorentina
             Thread t3 = new Thread(new ThreadStart(run_g3)); t3.Start();
             //Thread.Sleep(3000);
             Thread t4 = new Thread(new ThreadStart(run_g4)); t4.Start();
-            //Thread.Sleep(3000);
-            Thread t5 = new Thread(new ThreadStart(run_g5)); t5.Start();
-            //Thread.Sleep(3000);
-            Thread t6 = new Thread(new ThreadStart(run_g6)); t6.Start();
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -62,8 +58,9 @@ namespace Fiorentina
 
         }
         // detlay between starts of the piastre
-        const int deltay = (45*2);
-        //const int deltay = (5);
+        //const int deltay = (45*2); OLD 2022
+        //const int deltay = (50); // new 2023
+        const int deltay = (5); // debug 
 
         public void run_g1() // starts at delay*0
         {
@@ -85,15 +82,6 @@ namespace Fiorentina
             Griglia g4 = new Griglia(4, _ss, textBoxP4_s1, textBoxP4_s2, textBoxP4_s3, deltay*3, checkBox10, checkBox11, checkBox12, textBox4);
         }
 
-        public void run_g5()
-        {
-            Griglia g5 = new Griglia(5, _ss, textBoxP5_s1, textBoxP5_s2, textBoxP5_s3, deltay*4, checkBox13, checkBox14, checkBox15, textBox5);
-        }
-
-        public void run_g6()
-        {
-            Griglia g6 = new Griglia(6, _ss, textBoxP6_s1, textBoxP6_s2, textBoxP6_s3, deltay * 5, checkBox16, checkBox17, checkBox18, textBox6);
-        }
 
         private void textBoxP1_s1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -102,12 +90,18 @@ namespace Fiorentina
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            int totali = int.Parse(textBox1.Text) + int.Parse(textBox2.Text) + int.Parse(textBox3.Text) + int.Parse(textBox4.Text) + int.Parse(textBox5.Text) + int.Parse(textBox6.Text);
+            int totali = int.Parse(textBox1.Text) + int.Parse(textBox2.Text) + int.Parse(textBox3.Text) + int.Parse(textBox4.Text);
             textBox7.Text = totali.ToString();
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // FIXME, terminate the threads
+            Application.Exit();
         }
     }
     public class Griglia
@@ -120,14 +114,14 @@ namespace Fiorentina
 
         CheckBox c1, c2, c3;
         // tempo lato 1
-        int time_l1 = (4 * 60 + 30);
+        int time_l1 = (3 * 60 + 40);
         //int time_l1 = (10);
         // tempo lato 2
-        int time_l2 = (4 * 60 + 30);
+        int time_l2 = (3 * 60 + 40);
         //int time_l2 = (10);
 
         // tempo lato 3
-        int time_l3 = (3 * 60 + 30);
+        int time_l3 = (3 * 60);
         //int time_l3 = (5);
 
         TextBox cicl;
